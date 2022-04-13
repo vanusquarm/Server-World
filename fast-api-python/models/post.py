@@ -11,4 +11,4 @@ class UserModel(database.Base):
   post_title = _sqlalchemy.Column(_sqlalchemy.String, index=True)
   post_description = _sqlalchemy.Column(_sqlalchemy.String, index=True)
   created_at = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.utcnow())
-  user = _orm.relationship("User”, back_p0pulates="post")
+  user = _orm.relationship("User”, back_populates="post")
