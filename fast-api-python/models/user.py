@@ -11,4 +11,4 @@ class UserModel(database.Base):
   name = sqlalchemy.Column(sqlalchemy.String)
   password_hash = sqlalchemy.Column(sqlalchemy.String)
   created_at = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.utcnow())
-  post = _orm.relationship("Post”, back_p0pulates="user")
+  post = _orm.relationship("Post”, back_populates="user")
